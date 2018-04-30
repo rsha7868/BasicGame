@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{895DA56E-7FE0-4F66-B6F7-CDE02A34C0C7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BasicGame/.Model/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BasicGame/Model/Player.cs">
     <Files>
-      <File FileName="BasicGame/Game1.cs" Line="15" Column="26" />
-      <File FileName="BasicGame/.Model/Player.cs" Line="7" Column="4" />
+      <File FileName="BasicGame/Model/Player.cs" Line="6" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BasicGame PreferredExecutionTarget="MonoDevelop.Default" />
