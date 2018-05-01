@@ -28,7 +28,7 @@ public Animation PlayerAnimation
 
 		public void Initialize()
 		{
-	public void Initialize(Animation animation, Vector2 position)
+		public void Initialize(Animation animation, Vector2 position)
 	{
 	playerAnimation = animation;
 
