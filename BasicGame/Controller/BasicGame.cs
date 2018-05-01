@@ -34,6 +34,7 @@ namespace BasicGame.Controller
 			// TODO: Add your initialization logic here
 
 			base.Initialize();
+			player = new Player();
 		}
 
 		/// <summary>
@@ -44,7 +45,12 @@ namespace BasicGame.Controller
 		{
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
+Animation playerAnimation = new Animation();
+Texture2D playerTexture = Content.Load<Texture2D>("Animation/shipAnimation");
+playerAnimation.Initialize(playerTexture, Vector2.Zero, 115, 69, 8, 30, Color.White, 1f, true);
 
+Vector2 playerPosition = new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X, GraphicsDevice.Viewport.TitleSafeArea.Y + GraphicsDevice.Viewport.TitleSafeArea.Height / 2);
+player.Initialize(playerAnimation, playerPosition);
 			//TODO: use this.Content to load your game content here 
 		}
 

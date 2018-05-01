@@ -15,7 +15,7 @@ namespace BasicGame.Model
 
 		public Player()
 		{
-			player = new Player();
+			
 
 		}
 private Animation playerAnimation;
@@ -26,10 +26,9 @@ public Animation PlayerAnimation
 }
 
 
-		public void Initialize()
-		{
-		public void Initialize(Animation animation, Vector2 position)
+public void Initialize(Animation animation, Vector2 position)
 	{
+
 	playerAnimation = animation;
 
 	// Set the starting position of the player around the middle of the screen and to the back
@@ -42,10 +41,11 @@ public Animation PlayerAnimation
 	Health = 100;
 		}
 
-		public void Update()
+		public void Update(GameTime gameTime)
 		{
 				playerAnimation.Position = Position;
-    playerAnimation.Update(gameTime);
+    			playerAnimation.Update(gameTime);
+				player.Update(gameTime);
 		}
 
 		public void Draw(SpriteBatch spriteBatch)
@@ -87,15 +87,15 @@ public Animation PlayerAnimation
 		// Get the width of the player ship
 		public int Width
 		{
-			get { return PlayerTexture.Width; }
-				get { return playerAnimation.FrameWidth; }
+			
+			get { return playerAnimation.FrameWidth; }
 		}
 
 		// Get the height of the player ship
 		public int Height
 		{
-			get { return PlayerTexture.Height; }
-				get { return playerAnimation.FrameHeight; }
+			
+			get { return playerAnimation.FrameHeight; }
 		}
 
 

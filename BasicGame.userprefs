@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{895DA56E-7FE0-4F66-B6F7-CDE02A34C0C7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BasicGame/Model/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BasicGame/View/ParallaxingBackground.cs">
     <Files>
-      <File FileName="BasicGame/Model/Player.cs" Line="19" Column="4" />
-      <File FileName="BasicGame/Model/Program.cs" Line="28" Column="15" />
-      <File FileName="BasicGame/Controller/BasicGame.cs" Line="12" Column="15" />
-      <File FileName="BasicGame/View/Animation.cs" Line="100" Column="4" />
+      <File FileName="BasicGame/Model/Player.cs" Line="13" Column="25" />
+      <File FileName="BasicGame/Model/Program.cs" Line="34" Column="10" />
+      <File FileName="BasicGame/Controller/BasicGame.cs" Line="63" Column="74" />
+      <File FileName="BasicGame/View/Animation.cs" Line="119" Column="2" />
       <File FileName="BasicGame/Properties/AssemblyInfo.cs" Line="23" Column="31" />
+      <File FileName="BasicGame/Controller/Program.cs" Line="29" Column="26" />
+      <File FileName="BasicGame/View/ParallaxingBackground.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BasicGame PreferredExecutionTarget="MonoDevelop.Default" />
