@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{895DA56E-7FE0-4F66-B6F7-CDE02A34C0C7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BasicGame/View/Animation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BasicGame/Controller/BasicGame.cs">
     <Files>
-      <File FileName="BasicGame/Model/Player.cs" Line="6" Column="19" />
-      <File FileName="BasicGame/Model/BasicGame.cs" Line="7" Column="1" />
-      <File FileName="BasicGame/Model/Program.cs" Line="1" Column="1" />
-      <File FileName="BasicGame/Controller/BasicGame.cs" Line="1" Column="1" />
-      <File FileName="BasicGame/Controller/Program.cs" Line="1" Column="1" />
-      <File FileName="BasicGame/View/Animation.cs" Line="117" Column="1" />
+      <File FileName="BasicGame/Model/Player.cs" Line="9" Column="26" />
+      <File FileName="BasicGame/Model/Program.cs" Line="28" Column="15" />
+      <File FileName="BasicGame/Controller/BasicGame.cs" Line="10" Column="31" />
+      <File FileName="BasicGame/View/Animation.cs" Line="1" Column="1" />
+      <File FileName="BasicGame/Properties/AssemblyInfo.cs" Line="23" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.BasicGame PreferredExecutionTarget="MonoDevelop.Default" />

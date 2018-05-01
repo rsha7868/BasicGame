@@ -3,32 +3,59 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using BasicGame.Controller;
+using BasicGame.View;
 
-namespace BasicGame
+
+namespace BasicGame.Model
 {
 	public class Player
 	{
+		private Player player;
+
+
 		public Player()
 		{
-
+			player = new Player();
 
 		}
+private Animation playerAnimation;
+public Animation PlayerAnimation
+{
+	get { return playerAnimation; }
+	set { playerAnimation = value; }
+}
 
 
 		public void Initialize()
 		{
+	public void Initialize(Animation animation, Vector2 position)
+	{
+	playerAnimation = animation;
 
+	// Set the starting position of the player around the middle of the screen and to the back
+	Position = position;
+
+	// Set the player to be active
+	Active = true;
+
+	// Set the player health
+	Health = 100;
 		}
 
 		public void Update()
 		{
-
+				playerAnimation.Position = Position;
+    playerAnimation.Update(gameTime);
 		}
 
 		public void Draw(SpriteBatch spriteBatch)
 		{
 			spriteBatch.Draw(PlayerTexture, Position, null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
+			spriteBatch.Begin();
+				playerAnimation.Draw(spriteBatch);
+			player.Draw(spriteBatch);
+			spriteBatch.End();
+
 		}
 		// Animation representing the player
 		private Texture2D playerTexture;
@@ -61,12 +88,14 @@ namespace BasicGame
 		public int Width
 		{
 			get { return PlayerTexture.Width; }
+				get { return playerAnimation.FrameWidth; }
 		}
 
 		// Get the height of the player ship
 		public int Height
 		{
 			get { return PlayerTexture.Height; }
+				get { return playerAnimation.FrameHeight; }
 		}
 
 

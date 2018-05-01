@@ -5,18 +5,19 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 // Reference for all Model objects
 using BasicGame.Model;
+using BasicGame.View;
 
-namespace BasicGame
+namespace BasicGame.Controller
 {
 	/// <summary>
 	/// This is the main type for your game.
-	/// </summary>
-	public class Game1 : Game
+	/// </summary>s
+	public class BasicGame : Game
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
 
-		public Game1()
+		public BasicGame()
 		{
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
