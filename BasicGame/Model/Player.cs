@@ -10,52 +10,30 @@ namespace BasicGame.Model
 {
 	public class Player
 	{
-		private Player player;
-
 
 		public Player()
 		{
-			
+
 
 		}
-private Animation playerAnimation;
-public Animation PlayerAnimation
-{
-	get { return playerAnimation; }
-	set { playerAnimation = value; }
-}
-
-
-public void Initialize(Animation animation, Vector2 position)
-	{
-
-	playerAnimation = animation;
-
-	// Set the starting position of the player around the middle of the screen and to the back
-	Position = position;
-
-	// Set the player to be active
-	Active = true;
-
-	// Set the player health
-	Health = 100;
+		private Animation playerAnimation;
+		public Animation PlayerAnimation
+		{
+			get { return playerAnimation; }
+			set { playerAnimation = value; }
 		}
+
 
 		public void Update(GameTime gameTime)
 		{
-				playerAnimation.Position = Position;
-    			playerAnimation.Update(gameTime);
-				player.Update(gameTime);
+			playerAnimation.Position = Position;
+			playerAnimation.Update(gameTime);
 		}
 
+		// Draw the player
 		public void Draw(SpriteBatch spriteBatch)
 		{
-			spriteBatch.Draw(PlayerTexture, Position, null, Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
-			spriteBatch.Begin();
-				playerAnimation.Draw(spriteBatch);
-			player.Draw(spriteBatch);
-			spriteBatch.End();
-
+			playerAnimation.Draw(spriteBatch);
 		}
 		// Animation representing the player
 		private Texture2D playerTexture;
@@ -72,8 +50,8 @@ public void Initialize(Animation animation, Vector2 position)
 		private bool active;
 		public bool Active
 		{
-		get { return active; }
-		set { active = value; }
+			get { return active; }
+			set { active = value; }
 		}
 
 		// Amount of hit points that player has
@@ -87,32 +65,33 @@ public void Initialize(Animation animation, Vector2 position)
 		// Get the width of the player ship
 		public int Width
 		{
-			
+
 			get { return playerAnimation.FrameWidth; }
 		}
 
 		// Get the height of the player ship
 		public int Height
 		{
-			
+
 			get { return playerAnimation.FrameHeight; }
 		}
 
 
 
-		// Replace the Initialize method stub with this code
-		public void Initialize(Texture2D texture, Vector2 position)
+		// Initialize the player
+		public void Initialize(Animation animation, Vector2 position)
 		{
-			PlayerTexture = texture;
+			playerAnimation = animation;
 
-			// Set the starting position of the player around the middle of the screen and to the back 
+			// Set the starting position of the player around the middle of the screen and to the back
 			Position = position;
 
-			// Set the player to be active 
+			// Set the player to be active
 			Active = true;
-				
+
 			// Set the player health
 			Health = 100;
 		}
+
 	}
 }
