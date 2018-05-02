@@ -43,6 +43,7 @@
     <Compile Include="Controller\Program.cs" />
     <Compile Include="View\ParallaxingBackground.cs" />
     <Compile Include="Model\Enemy.cs" />
+    <Compile Include="Model\Projectile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Icon.png" />
